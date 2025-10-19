@@ -1,6 +1,5 @@
 langchain>=0.3.27
-langchain-openai>=0.3.33
-openai>=1.107.2
+langchain-groq>=0.1.5
 python-dotenv>=1.1.1
 streamlit>=1.49.1
 tinydb>=4.8.2

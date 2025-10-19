@@ -15,7 +15,7 @@ A powerful tool for Amazon product price analysis and competitor tracking, power
 - **Frontend**: Streamlit with custom CSS styling
 - **Backend**: Python 3.13+
 - **Database**: TinyDB (JSON-based)
-- **AI/ML**: LangChain + GROQ
+- **AI/ML**: LangChain + Groq (LLaMA 70B)
 - **Data Collection**: Oxylabs Realtime API
 
 ## Setup
@@ -64,7 +64,7 @@ A powerful tool for Amazon product price analysis and competitor tracking, power
 ├── main.py              # Streamlit UI and main application
 ├── src/
 │   ├── db.py           # Database operations (TinyDB)
-│   ├── llm.py          # AI analysis using LangChain
+│   ├── llm.py          # AI analysis using LangChain + Groq
 │   ├── oxylabs_client.py # Product data scraping
 │   └── services.py     # Business logic and data processing
 ├── data.json           # Local database file
@@ -86,5 +86,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Built with Streamlit
-- Powered by OpenAI and LangChain
+- Powered by Groq and LangChain
 - Data provided by Oxylabs
