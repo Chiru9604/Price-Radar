@@ -38,8 +38,8 @@ def format_competitors(db, parent_asin):
     ]
 
 def analyze_competitors(asin):
-    from langchain_openai import ChatOpenAI
-    from langchain.prompts import PromptTemplate
+    from langchain_groq import ChatGroq
+    from langchain_core.prompts import PromptTemplate
     from langchain_core.output_parsers import PydanticOutputParser
 
     db = Database()
@@ -69,7 +69,7 @@ def analyze_competitors(asin):
         partial_variables={"format_instructions": parser.get_format_instructions()}
     )
 
-    llm = ChatOpenAI(model="gpt-4", temperature=0)
+    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
 
     chain = prompt | llm | parser
 
